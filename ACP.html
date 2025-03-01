@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: rgb(215, 191, 246);
+        text-align: center;
+      }
+
+      #result {
+        color: rgb(0, 8, 255);
+        font-family: cursive;
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 41px;
+        font-family: cursive;
+        color: rgb(46, 46, 205);
+      }
+
+      p {
+        color: rgb(69, 69, 234);
+        font-size: 25px;
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h2><u>Javascript String Methods and Loops</u></h2>
+    <p>Numbers from 1 to 10</p>
+    <p id="result"></p>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 11; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      document.write("The random value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      var date = new Date();
+
+      document.write("Today's Date is " + date.getDate());
+    </script>
+  </body>
+</html>
